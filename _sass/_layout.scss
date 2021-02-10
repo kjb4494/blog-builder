@@ -28,10 +28,18 @@ ul.default {
 }
 
 code {
-	background-color: #eee;
+	font-family: 'D2 coding', "Consolas", monospace;
 	display: inline-block;
-	border-radius: 3px;
-	padding: 0 3px;
+	
+}
+
+pre.highlight {
+	overflow-x: auto;
+	padding: 15px;
+}
+
+.highlight {
+	border-radius: 10px;
 }
 
 blockquote {
