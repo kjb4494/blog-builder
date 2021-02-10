@@ -8,6 +8,8 @@ plugins:
 exclude:
   - "/vendor/"
 
+destination: ./output
+
 # Site settings
 title: 늒네의 개발일지
 subtitle: "초보 개발자의 기록 보관소"
