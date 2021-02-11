@@ -29,7 +29,7 @@ tags: github blog
     ```
 - commit & push 하고 조금만 기다리면 https://[본인아이디].github.io에 접속할 수 있다.
     >* 만약 안 될 경우 깃허브 프로젝트 settings에서 다음과 같이 main branch로 바꿔준다.
-    ![github settings](/assets/imgs/posts/create-github-blog/001.png)
+    ![github settings](/assets/imgs/posts/github/create-github-blog-001.png)
 
 여기까지가 가장 간단하게 깃허브를 이용해 블로그를 생성할 수 있는 방법인듯하다.
 
