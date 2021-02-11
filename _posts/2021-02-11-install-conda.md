@@ -3,7 +3,7 @@ layout: post
 title: "Python Anaconda 설치하기"
 date: 2021-02-11
 categories: python
-tags: python, anaconda
+tags: python anaconda
 ---
 
 ### Windows10
