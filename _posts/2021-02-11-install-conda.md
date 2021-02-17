@@ -6,7 +6,7 @@ categories: python
 tags: python anaconda
 ---
 
-### Windows10
+### Windows10에 설치하기
 - [*Miniconda 설치하기*](https://docs.conda.io/en/latest/miniconda.html)
 ![사진](/assets/imgs/posts/python/install-conda-001.png)
 환경 변수에 추가하기 체크
@@ -20,31 +20,46 @@ tags: python anaconda
     이런식으로 이상한 경로로 폴더를 만들어 프로필을 생성할 때가 있다.
     이럴 경우엔 저 이상한 경로로 되어 있는 폴더 안의 내용물을 직접 내문서로 옮겨준다.  
     가장 좋은 방법은 그냥 윈도우 설치할 때 마이크로소프트 계정 연동하지 말고 로컬 계정으로 만들었다가 나중에 연결하는 식으로 계정 만드는게 좋은듯...(위 사진은 옛날에 찍어놓은 스크린샷 ㅎㅎ...)
-- 많이 쓰는 명령어 모음
-    - 가상환경 조회
-        ```shell
-        conda env list
-        ```
-    - 가상환경 실행
-        ```shell
-        activate <env_name>
-        ```
-    - 가상환경 종료
-        ```shell
-        deactivate
-        ```
-    - conda 가상환경 내 package 목록/버전 확인
-        ```shell
-        conda list -n <env_name>
-        ```
-    - 특정 conda 가상환경을 복제해 새로운 가상환경을 생성
-        ```shell
-        conda create --name <new_env_name> --clone <old_env_name>
-        ```
-    - 가상환경 제거
-        ```shell
-        conda remove --name <env_name> --all
-        ```
+
+### Mac에 설치하기
+- [*miniconda 설치하기*](https://docs.conda.io/en/latest/miniconda.html)  
+    간편하게 [*Miniconda3 MacOSX 64-bit pkg*](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg)로 설치했다. 전부 기본값으로 설치하면 '/opt/miniconda3' 경로에 설치된다.
+- init
+    ```shell
+    /opt/miniconda3/bin/conda init zsh
+    ```
+    자신이 사용하고 있는 쉘로 init 한 뒤, 터미널을 껏다 켜준다.
+
+### 많이 쓰는 명령어 모음
+- 가상환경 조회
+    ```shell
+    conda env list
+    ```
+- 가상환경 만들기
+    ```shell
+    conda create -n <new_env_name> python=<python_version>
+    ```
+- 가상환경 실행
+    ```shell
+    activate <env_name>
+    ```
+- 가상환경 종료
+    ```shell
+    deactivate
+    ```
+- conda 가상환경 내 package 목록/버전 확인
+    ```shell
+    conda list -n <env_name>
+    ```
+- 특정 conda 가상환경을 복제해 새로운 가상환경을 생성
+    ```shell
+    conda create --name <new_env_name> --clone <old_env_name>
+    ```
+- 가상환경 제거
+    ```shell
+    conda remove --name <env_name> --all
+    ```
+
 
 ---
 

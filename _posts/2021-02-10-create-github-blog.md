@@ -19,6 +19,72 @@ tags: git github blog
 
 ---
 
+### 들어가기 전...
+jekyll을 설치해주자. 그럴려면 먼저 ruby를 설치해야한다.
+1. ruby 설치하기
+    - Windows10  
+        [*여기*](https://rubyinstaller.org/downloads/)에서 원하는 버전의 루비를 설치해준다. 매우 간단하다!
+    - Mac  
+        mac에서 gem 명령어를 사용하려고 하면 이런 에러가 발생한다.
+        ```text
+        ERROR:  While executing gem ... (Gem::FilePermissionError)
+            You don't have write permissions for the /Library/Ruby/Gems/2.3.0 directory.
+        ```
+        이것은 시스템 ruby를 사용하려고 하기 때문에 발생하는 에러다. 따라서 brew로 rbenv를 설치해 ruby를 이용할 것이다.([*설치 방법 참고*](https://github.com/rbenv/rbenv#installation))
+
+        ```shell
+        brew install rbenv
+        ```
+        설치가 완료되면 rbenv 명령어를 사용할 수 있다.
+
+        ```shell
+        rbenv init
+        ```
+        위 명령어를 실행하고 쉘을 껏다 켜주면 된다.
+
+        ```shell
+        curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+        ```
+        rbenv-doctor를 이용해 제대로 설정이 완료 됐는지 확인해준다. 아래처럼 전부 OK로 나온다면 잘 된 것이다.
+        ```text
+        Checking for `rbenv' in PATH: /usr/local/bin/rbenv
+        Checking for rbenv shims in PATH: OK
+        Checking `rbenv install' support: /usr/local/bin/rbenv-install (ruby-build 20210119)
+        Counting installed Ruby versions: 1 versions
+        Checking RubyGems settings: OK
+        Auditing installed plugins: OK
+        ```
+        
+        만약 zsh을 사용 중이고 PATH에서 rbenv shims를 못 잡을 경우, 아래 명령어를 수행 후 쉘을 껏다 켜주도록하자.
+        ```shell
+        echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+        ```
+        
+        모두 완료 됐으면 rbenv를 이용해 ruby를 설치해주도록 하자.
+
+        - 설치할 수 있는 ruby 버전 목록 출력
+            ```shell
+            rbenv install -l
+            ```
+        - ruby 설치하기
+            ```shell
+            rbenv install 2.6.6
+            ```
+            자신이 원하는 버전으로 설치해주면 된다. 2.6 버전이 필요해서 2.6.6을 설치했다.
+        
+        - ruby 사용하기
+            ```shell
+            rbenv global 2.6.6
+            ```
+            여기까지 하고도 권한 에러가 나면 쉘을 껏다 켜주도록 하자.
+1. jeklly, bundler 설치하기
+    ```shell
+    gem install jekyll bundler
+    ```
+    jekyll와 함께 [*bundler*](https://jekyllrb.com/docs/ruby-101/#bundler)도 설치해줬다.
+
+이러면 블로그를 만들 개발환경 세팅은 끝났다.
+
 ### 깃허브로 블로그 만드는 법
 - [본인아이디].github.io 로 레파지토리를 생성한다.
 - [*깃허브 테마*](http://jekyllthemes.org/) 중에서 마음에 드는 테마를 골라 다운로드하고 레파지토리로 모두 복사한다.
