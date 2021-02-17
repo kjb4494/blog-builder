@@ -46,6 +46,25 @@ tags: git github commit
 1. github에 gpg key 등록하기  
     [*GPG keys Settings*](https://github.com/settings/keys)에서 export한 내용을 복사해 등록해준다.
 
+### Mac에서...
+```shell
+brew install gnupg
+brew install pinentry-mac
+```
+brew의 gnupg는 실제로 gnupg2로 링크되어 있기 때문에 github가 요구하는 gpg2 버전을 충족한다.
+mac에 기본적으로 pinentry가 깔려있겠지만, 만약 commit 할 때 아래와 같은 에러가 발생한다면 pinentry-mac을 설치해준다.
+
+```text
+error: gpg failed to sign the data
+fatal: failed to write commit object
+```
+pinentry-mac을 설치해도 이 같은 에러가 계속 난다면 아래 절차를 수행해주자.
+
+```shell
+echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+gpgconf --kill gpg-agent
+```
+
 ### commit 할 때 서명하기
 - git config
     ```shell
