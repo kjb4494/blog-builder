@@ -4,10 +4,23 @@ title: "Posts"
 permalink: /posts/
 main_nav: true
 ---
-{% for category in site.categories %}
-  {% capture cat %}{{ category | first }}{% endcapture %}
-  <button type="button" onclick="window.location.href='#{{cat}}' ">{{ cat | capitalize }} ({{site.categories[cat].size}})</button>
-{% endfor %}
+
+
+<div class="card">
+  <h2 style="color: #1b557a;">Categories</h2>
+  {% for category in site.categories %}
+    {% capture cat %}{{ category | first }}{% endcapture %}
+    <button type="button" onclick="window.location.href='#{{cat}}' ">{{ cat | capitalize }} ({{site.categories[cat].size}})</button>
+  {% endfor %}
+</div>
+
+<div class="card">
+  <h2 style="color: #1b557a;">Tags</h2>
+  {% for tag in site.tags %}
+    {% capture cat %}{{ tag | first }}{% endcapture %}
+    <button type="button" onclick="window.location.href='/tag/{{cat}}' ">{{ cat | capitalize }} ({{site.tags[cat].size}})</button>
+  {% endfor %}
+</div>
 
 <hr>
 

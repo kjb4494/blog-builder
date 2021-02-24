@@ -190,7 +190,12 @@ social:
   #   url: ""
   #   desc: Share to Hacker News
   #   share: false
-
+coding-test:
+  - name: 백준 문제풀이 코드
+    url: https://github.com/kjb4494/baekjoon
+  - name: 프로그래머스 문제풀이 코드
+    url: https://github.com/kjb4494/PythonProgrammers
+  
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
