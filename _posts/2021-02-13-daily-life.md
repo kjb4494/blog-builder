@@ -4,6 +4,7 @@ title: "2021년 2월 13일"
 date: 2021-02-13
 categories: life
 tags: life
+published: false
 ---
 ![사진](/assets/imgs/posts/daily-life/2021-02-13-001.jpg)
 

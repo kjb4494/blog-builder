@@ -4,6 +4,7 @@ title: "2021년 2월 11일"
 date: 2021-02-11
 categories: life
 tags: life
+published: false
 ---
 오늘부터 설연휴다...  
 근데 코로나 때문에 집에 박혀있기로 함 ㅠㅠ  

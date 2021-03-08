@@ -4,6 +4,7 @@ title: "Developing on AWS 1일차"
 date: 2021-03-03
 categories: aws
 tags: aws
+published: false
 ---
 
 ### 클라우드 컴퓨팅이란?
@@ -251,12 +252,3 @@ AWS는 IaaS로 시작해 점차 PaaS, SaaS로 발전함.
     - 리소스 정책이 잘 부여되어있는지 확인
         ![사진](/assets/imgs/posts/aws/developing-on-aws-1-006.png)
     - exist bucket 확인시 if문을 사용하지말고 try-except문을 이용해서 한 번의 요청만으로 처리할 것 - 요청 횟수 감소
-
----
-
-### 1일차 교육 후기
-뭔가 정리할 틈이 없이 강의가 고속으로 진행된다... 
-
-AWS 서비스 종류와 특징이거나 개발자 입장에서 코딩할 때 비용이나 퍼포먼스를 아낄 수 있는 자잘한 팁과 best practice, 그리고 IAM 보안 관련(기본적인 동작방식은 물론, 하지 말아야할 것, 권장되는 방법 등) 비중이 큰 강의였다.
-
-이 글은 나중에 좀 깔끔하게 정리해야할듯...
