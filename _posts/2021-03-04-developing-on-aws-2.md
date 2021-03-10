@@ -60,6 +60,8 @@ published: false
     - 서버리스이기 때문에 로컬의 영구적인 디스크 공간을 쓸 수 없다. -> 클라우드 저장공간을 사용할 것
     - 기본적으로 로그 쓰기 권한에 대한 role을 가지고 있다. (LambdabasicExcution)
     - 가급적 프록시 통합 기능 사용
+- [*python에서의 handler*](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/python-handler.html)  
+    함수 핸들러는 임의의 이름일 수 있지만 Lambda 콘솔의 기본값은 lambda_function.lambda_handler입니다. 이 이름은 함수 이름을 lambda_handler로 나타내고 핸들러 코드가 저장된 파일은 lambda_function.py에 저장됩니다.
 
 ### AWS SAM
 서버리스 앱을 정의하기 위한 템플릿 기반 배포 모델
@@ -72,5 +74,3 @@ published: false
     - try/catch/finally를 사용할 때
     - 데이터에 근거하여 선택하고 싶을 때
     - 작업을 병렬로 실행하고 싶을 때
-
-https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/python-handler.html
