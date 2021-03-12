@@ -75,7 +75,7 @@ pandas는 이런 종류의 데이터로 여러분이 하고 싶어하는 대부�
 
 예를 들어, 호주 멜버른의 집값에 대한 데이터를 살펴보겠습니다. 실습에서는 동일한 프로세스를 아이오와에 있는 집값이 포함된 새 dataset에 적용합니다.
 
->* [*melb_data.csv*](https://storage.googleapis.com/kaggle-data-sets/13426/18170/compressed/melb_data.csv.zip?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20210309%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20210309T120717Z&X-Goog-Expires=259199&X-Goog-SignedHeaders=host&X-Goog-Signature=3689a4821986f6bc2a0646b79fd61ddcb6aa84ce7ed76f1e2c171d9e94443dbda1b54b9980b2883d2255bb95d23366666e184e3af860e692c8fd8de9459cccdb99ce6fe4cd827916636d768da334fad1514616d88550a49b118ed18b6bf455e0c16efbdc0db9eca798edf9d25146de6aac399a346a005f228c7b72805aaa703b4ebbd93c061361993dbca9b5e77e11a106d08cb7009a4d9eb7765d001917344927df4150b2e8c7fbd25a2a253a45c4c3fc6aaa211fe2e19de7397ca545416ddc26cc3f72588ee9d351e79c0be835b20711ed58070ba31ae23728e537362d81c95fd2774ff020b66b11efb6e8c228d6c201ee628e3b955c53bd81dfd883e2e947)
+>* [*melb_data.csv*](https://www.kaggle.com/gunjanpathak/melb-data?select=melb_data.csv)
 
 다음 코드를 사용하여 데이터를 로드하고 탐색할 수 있습니다.
 ```python
