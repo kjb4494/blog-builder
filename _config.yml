@@ -195,6 +195,8 @@ coding-test:
     url: https://github.com/kjb4494/baekjoon
   - name: 프로그래머스 문제풀이 코드
     url: https://github.com/kjb4494/PythonProgrammers
+  - name: 쥬피터 노트북 저장소
+    url: https://github.com/kjb4494/jupyter-notebook-storage
   
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
